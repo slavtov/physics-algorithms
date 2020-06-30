@@ -38,9 +38,7 @@ form1.addEventListener('input', e => {
     sin.innerText = '';
 
     let res = (+degree.value + +minute.value / 60 + +second.value / 3600).toFixed(4),
-        sum = (start.value.replace(',', '.') - res).toFixed(6).slice(0, -2);
-
-    sum = Math.sin((sum / 180) * Math.PI).toFixed(6).slice(0, -2);
+        sum = Math.sin(((start.value.replace(',', '.') - res) / 180) * Math.PI).toFixed(4);
 
     if (degree.value && minute.value && second.value) {
         q1.innerHTML = '&phi;1 = ' + res;
