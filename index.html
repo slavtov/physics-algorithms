@@ -11,13 +11,10 @@
         <div class="row justify-content-center mt-5 mb-4">
             <div class="col-md-5">
                 <div class="card">
-                    <div class="card-header">Получение Sin</div>
+                    <div class="card-header">Получение sin(|&phi;0 - &phi;1|)</div>
                     <div class="card-body">
                         <form id="form1">
-                            <div class="form-group">
-                                <label for="start">&phi;0 (белая линия)</label>
-                                <input type="text" class="form-control" id="start">
-                            </div>
+                            <label for="degree">&phi;0 (белая линия)</label>
                             <div class="form-row">
                                 <div class="col-4 form-group">
                                     <label for="degree">градусы</label>
@@ -32,10 +29,26 @@
                                     <input type="text" class="form-control" id="second">
                                 </div>
                             </div>
+                            <label for="degree2">&phi;1</label>
+                            <div class="form-row">
+                                <div class="col-4 form-group">
+                                    <label for="degree2">градусы</label>
+                                    <input type="text" class="form-control" id="degree2">
+                                </div>
+                                <div class="col-4 form-group">
+                                    <label for="minute2">минуты</label>
+                                    <input type="text" class="form-control" id="minute2">
+                                </div>
+                                <div class="col-4 form-group">
+                                    <label for="second2">секунды</label>
+                                    <input type="text" class="form-control" id="second2">
+                                </div>
+                            </div>
                         </form>
 
                         <div class="mt-3 text-center">
                             <div class="mb-3">
+                                <div id="q0"></div>
                                 <div id="q1"></div>
                                 <div id="sin"></div>
                             </div>
@@ -94,106 +107,6 @@
                         <div class="mt-3 text-center">
                             <div id="middle" class="mb-3"></div>
                             <button class="btn btn-sm btn-danger" id="middle-del">очистить</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mt-4">
-                    <div class="card-header">Получение Sin (2)</div>
-                    <div class="card-body">
-                        <form id="form4">
-                            <label for="q1degree">&phi;0 (белая линия)</label>
-                            <div class="form-row">
-                                <div class="col-4 form-group">
-                                    <label for="q1degree">градусы</label>
-                                    <input type="text" class="form-control" id="q1degree">
-                                </div>
-                                <div class="col-4 form-group">
-                                    <label for="q1minute">минуты</label>
-                                    <input type="text" class="form-control" id="q1minute">
-                                </div>
-                                <div class="col-4 form-group">
-                                    <label for="q1second">секунды</label>
-                                    <input type="text" class="form-control" id="q1second">
-                                </div>
-                            </div>
-                            <label for="degree2">&phi;1</label>
-                            <div class="form-row">
-                                <div class="col-4 form-group">
-                                    <label for="degree2">градусы</label>
-                                    <input type="text" class="form-control" id="degree2">
-                                </div>
-                                <div class="col-4 form-group">
-                                    <label for="minute2">минуты</label>
-                                    <input type="text" class="form-control" id="minute2">
-                                </div>
-                                <div class="col-4 form-group">
-                                    <label for="second2">секунды</label>
-                                    <input type="text" class="form-control" id="second2">
-                                </div>
-                            </div>
-                        </form>
-
-                        <div class="mt-3 text-center">
-                            <div class="mb-3">
-                                <div id="q1-2"></div>
-                                <div id="sin2"></div>
-                            </div>
-                            <button class="btn btn-sm btn-danger" id="sin2-del">очистить</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card my-4">
-                    <div class="card-header">Получение &lambda; (лямбда) (2)</div>
-                    <div class="card-body">
-                        <form id="form5">
-                            <div class="form-row">
-                                <div class="col-6 form-group">
-                                    <label for="dif2">d (период диф.реш.)</label>
-                                    <input type="text" class="form-control" id="dif2">
-                                </div>
-                                <div class="col-6 form-group">
-                                    <label for="q1-lam2">&phi;1</label>
-                                    <input type="text" class="form-control" id="q1-lam2">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="qty2">номер (n-ого порядка)</label>
-                                <input type="text" class="form-control" id="qty2">
-                            </div>
-                        </form>
-
-                        <div class="mt-3 text-center">
-                            <div id="lam2" class="mb-3"></div>
-                            <button class="btn btn-sm btn-danger" id="lam2-del">очистить</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">Среднее значение (длин волн) (2)</div>
-                    <div class="card-body">
-                        <form id="form6">
-                            <div class="form-row">
-                                <div class="col-4 form-group">
-                                    <label for="k1-2">&lambda;k1</label>
-                                    <input type="text" class="form-control" id="k1-2">
-                                </div>
-                                <div class="col-4 form-group">
-                                    <label for="k2-2">&lambda;k2</label>
-                                    <input type="text" class="form-control" id="k2-2">
-                                </div>
-                                <div class="col-4 form-group">
-                                    <label for="k3-2">&lambda;k3</label>
-                                    <input type="text" class="form-control" id="k3-2">
-                                </div>
-                            </div>
-                        </form>
-
-                        <div class="mt-3 text-center">
-                            <div id="middle2" class="mb-3"></div>
-                            <button class="btn btn-sm btn-danger" id="middle2-del">очистить</button>
                         </div>
                     </div>
                 </div>
