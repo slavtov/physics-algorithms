@@ -1,4 +1,4 @@
 # physics-algorithms
 
 ## Details
-Live demo: https://slavken.github.io/physics-algorithms/
+Live demo: https://slavtov.github.io/physics-algorithms/
